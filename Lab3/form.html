@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<style>
+p {
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+label {
+  display: inline-block;
+  background-color: grey;
+  min-width: 70px;
+}
+fieldset {
+  box-sizing: border-box;
+  width: 400px;
+}
+
+  </style>
+</head>
+
+<body>
+
+
+    <legend style="background-color: black; color:white;">Wypełnij formularz</legend>
+
+    <form action="*">
+
+      <label>Imię:</label> <input type="text" name="nazwisko" />
+    </form>
+    <form action="*">
+      <label>Nazwisko:</label> <input type="text" name="nazwisko" />
+
+    </form>
+
+    <form action="values.php" method=""POST>
+      <fieldset>
+      <label>Płeć:</label>
+      <input type="radio" name="radio1" value="wartość1" />
+      <label for="radio1">Mężczyzna</label>
+      <input type="radio" name="radio1" value="wartość1" />
+      <label for="radio2">Kobieta</label>
+      </fieldset>
+    </form>
+
+    <form action="*">
+      <label>Hasło:</label> <input type="text" name="nazwisko" />
+    </form>
+    <form action="*">
+      <label>Opcja</label><select name="select">
+        <option>--wybierz jedną z opcji--</option>
+      </select>
+    </form>
+
+    <div>Wpisz coś... <textarea name="nazwa" cols="20" rows="8"></textarea></div>
+
+    <div style="margin-left: 30px;">
+      <input type="checkbox" name="checkbox" value="wartość" />Zgadzam się na warunk Umowy.
+    </div>
+
+    <div style="padding-left:80px; background-color: red; max-width: 180px;">
+      <input type="submit" value=Wyślij>
+      <input type="reset" value=Reset>
+    </div>
+  </fieldset>
+</body>
+</head>
+<body>
+
+</body>
+</html>
